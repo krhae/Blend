@@ -15,6 +15,8 @@
 		753A73A81CC155D9007AA4DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753A73A61CC155D9007AA4DF /* LaunchScreen.storyboard */; };
 		753A73B31CC155D9007AA4DF /* BlendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A73B21CC155D9007AA4DF /* BlendTests.swift */; };
 		753A73BE1CC155D9007AA4DF /* BlendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A73BD1CC155D9007AA4DF /* BlendUITests.swift */; };
+		753A73D11CC183BF007AA4DF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753A73D01CC183BF007AA4DF /* FBSDKCoreKit.framework */; };
+		753A73D51CC1B56B007AA4DF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753A73D41CC1B56B007AA4DF /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		753A73B91CC155D9007AA4DF /* BlendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753A73BD1CC155D9007AA4DF /* BlendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendUITests.swift; sourceTree = "<group>"; };
 		753A73BF1CC155D9007AA4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753A73D01CC183BF007AA4DF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		753A73D31CC1B3E0007AA4DF /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		753A73D41CC1B56B007AA4DF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753A73D51CC1B56B007AA4DF /* FBSDKLoginKit.framework in Frameworks */,
+				753A73D11CC183BF007AA4DF /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 		753A738F1CC155D8007AA4DF = {
 			isa = PBXGroup;
 			children = (
+				753A73CD1CC1831E007AA4DF /* Frameworks */,
 				753A739A1CC155D9007AA4DF /* Blend */,
 				753A73B11CC155D9007AA4DF /* BlendTests */,
 				753A73BC1CC155D9007AA4DF /* BlendUITests */,
@@ -99,6 +107,7 @@
 		753A739A1CC155D9007AA4DF /* Blend */ = {
 			isa = PBXGroup;
 			children = (
+				753A73D31CC1B3E0007AA4DF /* Bridging-Header.h */,
 				753A739B1CC155D9007AA4DF /* AppDelegate.swift */,
 				753A739D1CC155D9007AA4DF /* MasterViewController.swift */,
 				753A739F1CC155D9007AA4DF /* DetailViewController.swift */,
@@ -126,6 +135,15 @@
 				753A73BF1CC155D9007AA4DF /* Info.plist */,
 			);
 			path = BlendUITests;
+			sourceTree = "<group>";
+		};
+		753A73CD1CC1831E007AA4DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753A73D41CC1B56B007AA4DF /* FBSDKLoginKit.framework */,
+				753A73D01CC183BF007AA4DF /* FBSDKCoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,10 +426,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/kelseyhawley/Dev/Facebook/FacebookSDKs-iOS-20160412",
+				);
 				INFOPLIST_FILE = Blend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelseyhawley.blend.Blend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Blend/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -419,10 +448,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/kelseyhawley/Dev/Facebook/FacebookSDKs-iOS-20160412",
+				);
 				INFOPLIST_FILE = Blend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelseyhawley.blend.Blend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Blend/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
