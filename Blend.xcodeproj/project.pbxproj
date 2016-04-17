@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		753A739C1CC155D9007AA4DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A739B1CC155D9007AA4DF /* AppDelegate.swift */; };
-		753A739E1CC155D9007AA4DF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A739D1CC155D9007AA4DF /* MasterViewController.swift */; };
-		753A73A01CC155D9007AA4DF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A739F1CC155D9007AA4DF /* DetailViewController.swift */; };
-		753A73A31CC155D9007AA4DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753A73A11CC155D9007AA4DF /* Main.storyboard */; };
 		753A73A51CC155D9007AA4DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753A73A41CC155D9007AA4DF /* Assets.xcassets */; };
 		753A73A81CC155D9007AA4DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753A73A61CC155D9007AA4DF /* LaunchScreen.storyboard */; };
 		753A73B31CC155D9007AA4DF /* BlendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A73B21CC155D9007AA4DF /* BlendTests.swift */; };
 		753A73BE1CC155D9007AA4DF /* BlendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A73BD1CC155D9007AA4DF /* BlendUITests.swift */; };
 		753A73D11CC183BF007AA4DF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753A73D01CC183BF007AA4DF /* FBSDKCoreKit.framework */; };
-		753A73D51CC1B56B007AA4DF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753A73D41CC1B56B007AA4DF /* FBSDKLoginKit.framework */; };
+		753A73D51CC1B56B007AA4DF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753A73D41CC1B56B007AA4DF /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		75CB6F871CC4430F0073EB53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CB6F851CC4430F0073EB53 /* Main.storyboard */; };
+		75CB6F891CC444470073EB53 /* imgUserLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75CB6F881CC444470073EB53 /* imgUserLogo.jpeg */; };
+		75CB6F8B1CC44AC40073EB53 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB6F8A1CC44AC40073EB53 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,6 @@
 /* Begin PBXFileReference section */
 		753A73981CC155D9007AA4DF /* Blend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		753A739B1CC155D9007AA4DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		753A739D1CC155D9007AA4DF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		753A739F1CC155D9007AA4DF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		753A73A21CC155D9007AA4DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		753A73A41CC155D9007AA4DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		753A73A71CC155D9007AA4DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		753A73A91CC155D9007AA4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +49,10 @@
 		753A73BD1CC155D9007AA4DF /* BlendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendUITests.swift; sourceTree = "<group>"; };
 		753A73BF1CC155D9007AA4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753A73D01CC183BF007AA4DF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		753A73D31CC1B3E0007AA4DF /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		753A73D41CC1B56B007AA4DF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		75CB6F861CC4430F0073EB53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75CB6F881CC444470073EB53 /* imgUserLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imgUserLogo.jpeg; path = "../../Downloads/facebook-integration-using-swift-master/FBIntegrationWithSwift/Resources/imgUserLogo.jpeg"; sourceTree = "<group>"; };
+		75CB6F8A1CC44AC40073EB53 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753A73D51CC1B56B007AA4DF /* FBSDKLoginKit.framework in Frameworks */,
 				753A73D11CC183BF007AA4DF /* FBSDKCoreKit.framework in Frameworks */,
+				753A73D51CC1B56B007AA4DF /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +85,7 @@
 		753A738F1CC155D8007AA4DF = {
 			isa = PBXGroup;
 			children = (
+				75CB6F881CC444470073EB53 /* imgUserLogo.jpeg */,
 				753A73CD1CC1831E007AA4DF /* Frameworks */,
 				753A739A1CC155D9007AA4DF /* Blend */,
 				753A73B11CC155D9007AA4DF /* BlendTests */,
@@ -107,14 +107,12 @@
 		753A739A1CC155D9007AA4DF /* Blend */ = {
 			isa = PBXGroup;
 			children = (
-				753A73D31CC1B3E0007AA4DF /* Bridging-Header.h */,
+				75CB6F851CC4430F0073EB53 /* Main.storyboard */,
 				753A739B1CC155D9007AA4DF /* AppDelegate.swift */,
-				753A739D1CC155D9007AA4DF /* MasterViewController.swift */,
-				753A739F1CC155D9007AA4DF /* DetailViewController.swift */,
-				753A73A11CC155D9007AA4DF /* Main.storyboard */,
 				753A73A41CC155D9007AA4DF /* Assets.xcassets */,
 				753A73A61CC155D9007AA4DF /* LaunchScreen.storyboard */,
 				753A73A91CC155D9007AA4DF /* Info.plist */,
+				75CB6F8A1CC44AC40073EB53 /* MainViewController.swift */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -253,9 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CB6F871CC4430F0073EB53 /* Main.storyboard in Resources */,
+				75CB6F891CC444470073EB53 /* imgUserLogo.jpeg in Resources */,
 				753A73A81CC155D9007AA4DF /* LaunchScreen.storyboard in Resources */,
 				753A73A51CC155D9007AA4DF /* Assets.xcassets in Resources */,
-				753A73A31CC155D9007AA4DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753A73A01CC155D9007AA4DF /* DetailViewController.swift in Sources */,
-				753A739E1CC155D9007AA4DF /* MasterViewController.swift in Sources */,
 				753A739C1CC155D9007AA4DF /* AppDelegate.swift in Sources */,
+				75CB6F8B1CC44AC40073EB53 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,20 +316,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		753A73A11CC155D9007AA4DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				753A73A21CC155D9007AA4DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		753A73A61CC155D9007AA4DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				753A73A71CC155D9007AA4DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		75CB6F851CC4430F0073EB53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CB6F861CC4430F0073EB53 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -378,6 +376,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blend/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -417,6 +416,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Blend/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -439,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelseyhawley.blend.Blend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Blend/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelseyhawley.blend.Blend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Blend/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -531,6 +531,7 @@
 				753A73C41CC155D9007AA4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753A73C51CC155D9007AA4DF /* Build configuration list for PBXNativeTarget "BlendTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +540,7 @@
 				753A73C71CC155D9007AA4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753A73C81CC155D9007AA4DF /* Build configuration list for PBXNativeTarget "BlendUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +549,7 @@
 				753A73CA1CC155D9007AA4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
